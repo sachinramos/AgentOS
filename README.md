@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://ziphire.hr/agentos-logo.png" alt="AgentOS" width="80" />
+  <img src="https://raw.githubusercontent.com/sachinramos/AgentOS/main/assets/agentos-logo.png" alt="AgentOS" width="80" />
 </p>
 
 <h1 align="center">AgentOS</h1>
