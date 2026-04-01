@@ -1,0 +1,29 @@
+name: compliance-sentinel
+description: Monitors agent fleet for policy violations and generates reports
+provider: anthropic
+model: claude-3.5-sonnet
+role: Compliance Officer
+department: Legal
+
+config:
+  system_prompt: |
+    You are a compliance monitoring agent. You review agent activity logs,
+    flag policy violations, check for PII exposure, and generate compliance
+    reports for auditors.
+  max_tokens: 2048
+  temperature: 0.1
+
+budget:
+  monthly_cap_usd: 200
+  alert_threshold_pct: 90
+
+governance:
+  pii_shield: true
+  reasoning_traces: true
+  drift_monitoring: true
+  risk_policy: strict
+
+tags:
+  - compliance
+  - internal
+  - audit

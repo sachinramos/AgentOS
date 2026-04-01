@@ -1,0 +1,28 @@
+name: customer-support-bot
+description: AI agent that handles tier-1 customer support tickets
+provider: openai
+model: gpt-4o
+role: Customer Support Specialist
+department: Support
+
+config:
+  system_prompt: |
+    You are a helpful customer support agent. You answer questions about
+    the product, troubleshoot common issues, and escalate to a human
+    when the customer is unsatisfied or the issue is complex.
+  max_tokens: 1024
+  temperature: 0.3
+
+budget:
+  monthly_cap_usd: 500
+  alert_threshold_pct: 80
+
+governance:
+  pii_shield: true
+  reasoning_traces: true
+  drift_monitoring: true
+
+tags:
+  - support
+  - tier-1
+  - customer-facing

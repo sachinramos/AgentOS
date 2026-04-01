@@ -1,0 +1,28 @@
+name: code-review-agent
+description: Reviews pull requests for quality, security, and best practices
+provider: anthropic
+model: claude-4-sonnet
+role: Senior Engineer
+department: Engineering
+
+config:
+  system_prompt: |
+    You are an expert code reviewer. You analyse pull requests for code
+    quality, security vulnerabilities, performance issues, and adherence
+    to project coding standards. Provide actionable feedback.
+  max_tokens: 4096
+  temperature: 0.2
+
+budget:
+  monthly_cap_usd: 300
+  alert_threshold_pct: 75
+
+governance:
+  pii_shield: false
+  reasoning_traces: true
+  drift_monitoring: true
+
+tags:
+  - engineering
+  - code-review
+  - internal

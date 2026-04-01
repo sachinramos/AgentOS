@@ -1,0 +1,37 @@
+{
+  "name": "agentos",
+  "version": "1.0.0",
+  "description": "The Operating System for AI Agents — monitoring, governance, Token Payroll & compliance for your AI workforce",
+  "main": "server/index.ts",
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "build": "tsc && vite build",
+    "start": "node dist/server/index.js",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-governance",
+    "llm-ops",
+    "ai-monitoring",
+    "token-management",
+    "compliance",
+    "typescript",
+    "react"
+  ],
+  "author": "Ziphire",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sachinramos/AgentOS.git"
+  },
+  "homepage": "https://github.com/sachinramos/AgentOS",
+  "bugs": {
+    "url": "https://github.com/sachinramos/AgentOS/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
